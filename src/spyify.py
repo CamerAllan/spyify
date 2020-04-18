@@ -1,7 +1,7 @@
 from mitmproxy import ctx
 from mitmproxy import http
 import json
-import datetime
+from datetime import datetime
 
 
 def response(flow: http.HTTPFlow):
@@ -12,6 +12,7 @@ def response(flow: http.HTTPFlow):
         activity_text = flow.response.text
         info = json.loads(flow.response.text)
 
+        print(info)
         timestamp = datetime.fromtimestamp(info["timestamp"])
 
         print(f"New activity logged at timestamp: {timestamp}")

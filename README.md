@@ -24,4 +24,4 @@ For now, clone the repo and run the following:
 1. `pip install mitmproxy`
 1. `source env/bin/activate`
 1. `mitmdump -s ./src/spyipy.py`
-1. Set OS-level proxy to localhost:8080
+1. `Set OS-level proxy to localhost:8080` (hope to reduce this to just Spotify proxy)
