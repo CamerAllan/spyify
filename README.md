@@ -1,4 +1,4 @@
-# Spyify 🎵🔍
+# 🎵 Spyify 🔍
 
 Logging of Spotify friend activity. Serving as a substitute for [missing Web API functionality](https://github.com/spotify/web-api/issues/83)
 
