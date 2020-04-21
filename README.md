@@ -34,4 +34,4 @@ If you'd like to run Spyify, clone the repo and do the following:
 1. `pip install mitmproxy`
 1. follow steps to [Trust mitmproxy certificate](https://docs.mitmproxy.org/stable/concepts-certificates/)
 1. `./run.sh`
-1. set system proxy to localhost:8080
+1. set system proxy to `localhost:8080`
