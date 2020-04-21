@@ -18,9 +18,10 @@ Friend activity is stored in CSV files, separated by day.
 
 ### What about privacy stuff
 
-The friend activity is already available to users through the desktop client UI.
-[This] comment summarises the reason for the missing functionality - it comes down to 'there is currently no mechanism for users to consent to letting apps see what you're listening to'.
-[This comment](https://github.com/spotify/web-api/issues/83#issuecomment-311495141) raises a counterpoint which aligns with my views, therefore I have no problem making this project public.
+Friend activity is available to users through the desktop client UI.
+[This] comment gives an explanation as to why this functionality is missing - it comes down to 'there is currently no mechanism for users to consent to letting *applicatins* see what you're listening to'.
+[This comment](https://github.com/spotify/web-api/issues/83#issuecomment-311495141) raises a counterpoint - *'if you're explicitly consenting to making these details public, it would imply that you're also consenting to allowing others the ability to read and record that information.'*. 
+I'm happy enough with this reasoning that I have no problem sharing this project.
 
 ## Usage
 
@@ -33,3 +34,4 @@ If you'd like to run Spyify, clone the repo and do the following:
 1. `pip install mitmproxy`
 1. follow steps to [Trust mitmproxy certificate](https://docs.mitmproxy.org/stable/concepts-certificates/)
 1. `./run.sh`
+1. set system proxy to localhost:8080
