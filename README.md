@@ -11,6 +11,11 @@ Spyify aims to awkwardly plug that gap by intercepting https requests of the [Sp
 
 Anybody that wants to spy on their friends' listening habits. I think there is some fun analysis that could be done on the aggregated data.
 
+### How is it done
+
+This repo contains a script that, when given as a parameter to `mitmproxy`, will log all friend activity on a local Spotify desktop client. 
+Friend activity is stored in CSV files, separated by day.
+
 ### What about privacy stuff
 
 The friend activity is already available to users through the desktop client UI.
@@ -19,9 +24,12 @@ The friend activity is already available to users through the desktop client UI.
 
 ## Usage
 
-Hopefully this will be nicely packaged up in the future.
-For now, clone the repo and run the following:
+*Don't try to run Spyify* unless you understand the security implications of trusting a certificate authority.
+
+**Don't try to run Spyify**.
+
+If you'd like to run Spyify, clone the repo and do the following:
+
 1. `pip install mitmproxy`
-1. `source env/bin/activate`
-1. `mitmdump -s ./src/spyipy.py`
-1. `Set OS-level proxy to localhost:8080` (hope to reduce this to just Spotify proxy)
+1. follow steps to [Trust mitmproxy certificate](https://docs.mitmproxy.org/stable/concepts-certificates/)
+1. `./run.sh`
