@@ -1,0 +1,6 @@
+# DigitalOcean port notes
+
+## Solutions
+- Needed X11 forwarding to be able to sign in
+- forwarding worked for everything but spotify, it was giving auth error
+- just need to run this (assuming spotify was installed with snap) `ln -s ~/.Xauthority ~/snap/spotify/current/.Xauthority`
