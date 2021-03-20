@@ -2,6 +2,12 @@
 
 Logging of Spotify friend activity. Serving as a substitute for [missing Web API functionality](https://github.com/spotify/web-api/issues/83)
 
+## Update 20/03/21
+
+Since I made this, the app has changed and there is now a dedicated internal API call that fetches friend activity. This is used in this project: https://github.com/valeriangalliat/spotify-buddylist
+
+This renders most of my project obsolete, and I would recommend using or implementing something like the above if you want to track Spotify friend activity.
+
 ## What is this
 
 As of the creation of this project, the [Spotify Web API](https://developer.spotify.com/documentation/web-api/) has no endpoint for "Friend Activity".
